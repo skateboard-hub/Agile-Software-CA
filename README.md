@@ -47,3 +47,15 @@ https://github.com/skateboard-hub/Agile-Software-CA/pulls?q=is%3Apr+is%3Aclosed
 
 ## Independent learning (If relevant).
 
+Auto-deployment:
+I make the Auto-deployment with respect to the github, I pulish the website to 'https://skateboard-hub.github.io/' by the branch gh-pages
+
+refernce:https://create-react-app.dev/docs/deployment/#step-3-deploy-the-site-by-running-npm-run-deploy
+
+## Github.
+
+https://github.com/skateboard-hub/Agile-Software-CA.git
+
+## Gitlab.
+
+https://gitlab.com/skateboard-hub/agile-software-ca.git
