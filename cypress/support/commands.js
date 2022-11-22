@@ -34,3 +34,14 @@ Cypress.Commands.add('logIn', (username, password) => {
     cy.get("#outlined-multiline-static").clear().type(password);
     cy.get("button").contains("Log In").click();
 });
+
+Cypress.Commands.add('logInViaMobile', (username, password) => {
+    cy.get("header").find("button").click();
+    cy.get("#Link-to-favorite").click();
+    cy.url().should("include", `/movies/favorites`);
+    cy.get("#outlined-required").type(username, { force: true });
+    cy.get("#outlined-multiline-static").clear({ force: true }).type(password, { force: true });
+    cy.get("button").contains("Log In").click({ force: true });
+    cy.url().should("include", `/movies/favorites`);
+
+});
