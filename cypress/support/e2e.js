@@ -18,3 +18,9 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+export const filterByTitle = (peopleList, string) =>
+    peopleList.filter((m) => m.name.toLowerCase().search(string) !== -1);
+
+export const filterByGender = (peopleList, genderId) =>
+    peopleList.filter((m) => m.gender === (genderId));
