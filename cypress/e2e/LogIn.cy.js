@@ -67,37 +67,40 @@ describe("The loging In Page", () => {
           cy.url().should("include", `/movies/favorites`);
         });
       }
+      
     );
-    describe("when input wrong username", () => {
-      it("loging in via the links", () => {
-        cy.get("header").find("button").click();
-        cy.get("#Link-to-favorite").click();
-        cy.url().should("include", `/movies/favorites`);
+    describe(
+      "when the viewport is a mobile scale",
+    {
+      viewportHeight: 896,
+      viewportWidth: 414,
+    }, () => {
+      it("when input wrong username", () => {
         const username = "wrong";
         const password = "b";
-        cy.get("#outlined-required").type(username, {force: true});
-        cy.get("#outlined-multiline-static").clear({force: true}).type(password, {force: true});
-        cy.get("button").contains("Log In").click({force: true});
+        cy.logInViaMobile(username,password);
         cy.get(".MuiCardHeader-content").should(
           "have.length",
           0
         );
       });
     });
-    describe("when input wrong password", () => {
-      cy.get("header").find("button").click();
-        cy.get("#Link-to-favorite").click();
-        cy.url().should("include", `/movies/favorites`);
+    describe(
+      "when the viewport is a mobile scale",
+    {
+      viewportHeight: 896,
+      viewportWidth: 414,
+    }, () => {
+      it("when input wrong password", () => {
         const username = "a";
         const password = "wrong";
-        cy.get("#outlined-required").type(username, {force: true});
-        cy.get("#outlined-multiline-static").clear({force: true}).type(password, {force: true});
-        cy.get("button").contains("Log In").click({force: true});
+        cy.logInViaMobile(username,password);
         cy.get(".MuiCardHeader-content").should(
           "have.length",
           0
         );
       });
     });
+
   });
 });
