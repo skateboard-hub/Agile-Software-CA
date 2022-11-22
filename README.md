@@ -21,8 +21,12 @@ This repository contains the implementation of a React App and its associated Cy
 
 ## Automated Tests.
 
-+ filtering
-+ 
++ filtering - filter the people by the name, gender and the combination of both
++ hyperlinking - test if the app get the three films cards which the people is famous for and click the "More Information" button 
++ LogIn - test simple authentication, and responsive UI, using Cypress Custom commands and do Error/Exception testing.
++ navigation - test three new views, including top rated movie page, people page, people's detail page and parameterrised endpoints through navigation
++ pagination - test the pagination by the mui material UI and multiple arameterised URLs, comparing the data requested with the result in the page
++ review
 ### Best test cases.
 
 + cypress/e2e/LogIn.cy.js
@@ -30,30 +34,16 @@ This repository contains the implementation of a React App and its associated Cy
 
 ### Cypress Custom commands (if relevant).
 
-[ Specify the test file(s) that use a custom Cypress command(s) that you implemented.]
 
-e.g.
-+ cypress/e2e/filtering.cy.js
-+ cypress/e2e/favourites.cy.js
++ cypress/e2e/LogIn.cy.js
 
 ## Code Splitting.
 
-[Specify the pathname of each the file that contains evidence of code splitting in your React app.]
-
-e.g.
 + src/index.js
-+ src/pages/favouriteMoviesPage.js
-+ src/components/movieCard/index.js
 
 ## Pull Requests.
 
-[ Specify the URL of the GitHub repository that contains a record of Pull Requests for the React App.]
+https://github.com/skateboard-hub/Agile-Software-CA/pulls?q=is%3Apr+is%3Aclosed
 
 ## Independent learning (If relevant).
-
-[ Briefly explain the work you did to satisfy the requirements of the Outstanding grade category, and include proof (e.g. screenshots) of its success. Also, mention the files that contain evidence of this work.
-
-![](./images/sample.png)
-
-State any other evidence of independent learning achieved while completing this assignment.
 
