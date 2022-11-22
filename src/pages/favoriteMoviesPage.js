@@ -86,7 +86,7 @@ const FavoriteMoviesPage = () => {
         <>
           <Grid container sx={{ padding: '20px' }}  >
             <Grid item xs={12} >
-              <Header title="Sign In" />
+              <Header title="Log In" />
             </Grid>
             <Box sx={{
               flexGrow: 1, padding: '40px',
@@ -124,7 +124,7 @@ const FavoriteMoviesPage = () => {
                       }}
                       onClick={(event) => submitContent2(event)}
                     >
-                      Sign In <br/>Through mobile
+                      Log In <br/>Through mobile
                     </Button>
                   </div>
                 </Card>
@@ -159,7 +159,7 @@ const FavoriteMoviesPage = () => {
                       }}
                       onClick={(event) => submitContent2(event)}
                     >
-                      Sign In
+                      Log In
                     </Button>
                   </div>
                 </Card>

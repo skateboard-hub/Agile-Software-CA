@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('logIn', (username, password) => {
+    cy.get(".MuiCardHeader-root").eq(1).find("svg").should("not.exist");
+    cy.get("button[aria-label='add to favorites']").eq(1).click();
+    cy.get(".MuiCardHeader-root").eq(1).find("svg");
+    cy.get("#Link-to-favorite").click();
+    cy.url().should("include", `/movies/favorites`);
+    cy.get("#outlined-required").clear().type(username);
+    cy.get("#outlined-multiline-static").clear().type(password);
+    cy.get("button").contains("Log In").click();
+});

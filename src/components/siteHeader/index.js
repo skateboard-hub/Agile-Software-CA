@@ -87,7 +87,7 @@ const SiteHeader = () => {
                       {opt.label}
                     </MenuItem>
                   ))}
-                  <Link to={`/movies/favorites`}>
+                  <Link id="Link-to-favorite" to={`/movies/favorites`}>
                   <Stack direction="row" spacing={1} sx={{ display: 'flex', justifyContent: 'center'}}>
                     <Avatar />
                   </Stack>
@@ -105,7 +105,7 @@ const SiteHeader = () => {
                     {opt.label}
                   </Button>
                 ))}
-                <Link to={`/movies/favorites`}>
+                <Link id="Link-to-favorite" to={`/movies/favorites`}>
                 <Stack direction="row" spacing={1}>
                   <Avatar />
                 </Stack>
